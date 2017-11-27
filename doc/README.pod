@@ -1,1 +1,1 @@
-tutorial/EntryPoint.pm
+scripts/data-reg
