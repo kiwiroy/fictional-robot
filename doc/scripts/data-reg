@@ -1,3 +1,38 @@
+#!/usr/bin/env perl
+## -*- mode: perl; -*-
+
+# DEVELOPERS: Read maint/build.sh for how to up date this.
+# __FATPACK__
+
+package App::DataRegistry;
+
+use Applify;
+use Mojo::File;
+use App::DataRegistry::Base;
+use App::DataRegistry::List;
+
+our $VERSION = 0.01;
+
+extends 'App::DataRegistry::Base';
+
+documentation __FILE__;
+
+version $VERSION;
+
+subcommand list =>
+    qq{list the available species or data sources for a species} =>
+    sub {
+        extends 'App::DataRegistry::List';
+
+        option flag => search => 'something';
+};
+
+app {
+    my ($self, @extra) = @_;
+    $self->_script->print_help;
+    return 0;
+};
+
 
 =pod
 
