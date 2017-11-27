@@ -1,6 +1,8 @@
 #!/usr/bin/env perl
 
 
+## -*- mode: perl; -*-
+
 # DEVELOPERS: Read maint/build.sh for how to up date this.
 # __FATPACK__
 
