@@ -1,4 +1,4 @@
-#!/usr/bin/env perl  # -*- mode: perl; -*-
+#!/usr/bin/env perl
 
 =pod
 
@@ -18,4 +18,4 @@ Does something for the data-registry
 
 =cut
 
-__DATA__
+# -*- mode: perl; -*-
